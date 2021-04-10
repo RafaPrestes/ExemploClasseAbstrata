@@ -46,7 +46,9 @@ public class Main {
                     }
                     JOptionPane.showMessageDialog(null, msg);
                     break;
-                case 3: break;
+                case 3: 
+                    JOptionPane.showMessageDialog(null, "Obrigado :)");
+                    break;
             }
         }
     }
