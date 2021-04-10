@@ -8,10 +8,7 @@ package exemploclasseabstrata;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Usuário
- */
+
 public class Main {
 
     
@@ -22,8 +19,9 @@ public class Main {
         double valor, desconto;
         
         while(opc != 3){
+             opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Criar Funcionário \n2 - Mostrar funcionários \n3 - Sair"));
             
-            switch(opc){
+             switch(opc){
                 case 1: 
                     cracha = Integer.parseInt(JOptionPane.showInputDialog("Crachá: "));
                     nome = JOptionPane.showInputDialog("Nome: ");
@@ -49,7 +47,6 @@ public class Main {
                     JOptionPane.showMessageDialog(null, msg);
                     break;
                 case 3: break;
-                default: break;
             }
         }
     }

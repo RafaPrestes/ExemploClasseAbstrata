@@ -22,15 +22,14 @@ public class FuncionarioMensalista extends Funcionario {
         this.desconto = desconto;
     }
 
-
-    @Override
-    public double calcularSalario() {
-        return salario - desconto;
-    }
-
     @Override
     public String imprimir() {
-        return super.imprimir() + "\nSalário: " + salario + "\nDesconto: " + desconto + "Total: " + calcularSalario();
+        return super.imprimir() + "\nSalário: " + salario + "\nDesconto: " + desconto + "\nTotal: " + calcularSalario();
+    }
+    
+       @Override
+    public double calcularSalario() {
+        return salario - desconto;
     }
 
     public double getSalario() {

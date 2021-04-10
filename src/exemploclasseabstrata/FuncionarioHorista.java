@@ -23,13 +23,13 @@ public class FuncionarioHorista extends Funcionario {
     }
 
     @Override
-    public double calcularSalario() {
-        return qtdeHoras * valorHora;
-    }
-
-    @Override
     public String imprimir() {
         return super.imprimir() + "\nHoras: " + qtdeHoras + "\nValor Hora: " + valorHora + "\nTotal: " + calcularSalario();
+    }
+    
+       @Override
+    public double calcularSalario() {
+        return qtdeHoras * valorHora;
     }
 
     public int getQtdeHoras() {
